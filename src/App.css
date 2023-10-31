@@ -1,0 +1,312 @@
+body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  margin: 0px;
+  padding: 0px;
+  background: linear-gradient(
+    to bottom,
+    white,
+    rgb(173, 216, 230),
+    rgb(173, 216, 230),
+    rgb(173, 216, 230),
+    rgb(135, 206, 235),
+    white
+  );
+  height: 130vh;
+}
+a {
+  max-width: 100%;
+}
+input {
+  text-align: center;
+}
+button {
+  cursor: pointer;
+}
+body::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+header {
+  position: sticky;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.307);
+}
+header h1 {
+  font-family: serif;
+  font-weight: 900;
+  font-size: 2.2rem;
+  margin-top: 5px;
+  margin-left: 40px;
+  transition: 0.2s;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+header h1:hover {
+  color: rgba(128, 128, 128, 0.543);
+}
+header h1 span {
+  margin-top: 0.7rem;
+  font-size: 2.5rem;
+  margin-left: 0.35rem;
+  color: rgba(128, 128, 128, 0.543);
+  transition: 0.2s;
+}
+header h1 span:hover {
+  color: black;
+}
+header a {
+  margin-top: 0px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  margin-right: 3rem;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+header a:hover {
+  color: grey;
+}
+.contentBody {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33rem;
+  border: 1.5px solid grey;
+  margin: 2rem 0rem;
+  border-radius: 10px;
+  padding: 1.2rem;
+  height: 13rem;
+  transition: 0.25s;
+}
+.contentBody:hover {
+  border: 1.5px solid rgb(44, 44, 44);
+}
+.contentContainer a {
+  text-decoration: none;
+  color: black;
+}
+.contentBody p {
+  width: 90%;
+}
+.contentContainer {
+  height: 110%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: space-around;
+}
+.contentBottom {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+}
+.ContentPage {
+  font-family: sans-serif;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+}
+.ContentPageContainer {
+  margin-top: 5rem;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid grey;
+  border-radius: 1rem;
+  padding: 0.7rem;
+}
+.ContentPageContainer p {
+  width: 90%;
+}
+.contentURL {
+  width: 3rem;
+}
+.contentURLlink {
+  width: 10rem;
+  font-size: medium;
+  text-align: center;
+  margin-bottom: 0.3rem;
+}
+.pageContainerBottom {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.pageContainerBottom div {
+  display: flex;
+  flex-direction: column;
+}
+.pageContainerBottom div section {
+  gap: 0.3rem;
+}
+b {
+  font-weight: 800;
+  margin-left: 0.3rem;
+  font-size: 1.1rem;
+}
+.pageContainerBottom a {
+  margin-left: 0.3rem;
+  text-decoration: none;
+  color: blue;
+}
+.pageContainerBottom span {
+  font-weight: 800;
+  font-size: 1rem;
+}
+.ContentPageContainer section {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5rem;
+  gap: 0.2rem;
+}
+.inputContainer div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.9rem;
+}
+
+.inputContainer {
+  border: 2px solid rgba(0, 0, 0, 0.568);
+  width: 30rem;
+  height: 35rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+  border-radius: 8px;
+  transition: 0.5s;
+  padding-bottom: 1rem;
+}
+.inputContainer:hover {
+  border: 2px solid rgba(0, 0, 0, 0.161);
+}
+.inputContainer input {
+  width: 13rem;
+  height: 1.7rem;
+  border: 1px solid rgb(49, 48, 48);
+  border-radius: 7px;
+  transition: 0.3s;
+}
+.inputContainer select {
+  text-align: center;
+  margin-top: 0.3rem;
+  width: 13rem;
+  height: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.645);
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.inputContainer select:hover {
+  border-radius: 3px;
+}
+.inputContainer input:hover {
+  border-radius: 3px;
+}
+.inputContainer textarea {
+  height: 4.5rem;
+  width: 13rem;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.inputContainer textarea:hover {
+  border-radius: 1px;
+}
+.inputContainer label {
+  color: rgb(42, 29, 29);
+  font-family: sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+.createPage {
+  gap: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.createPage h1 {
+  margin-top: 2rem;
+  font-family: monospace;
+  color: rgb(37, 31, 24);
+}
+.inputContainer button {
+  margin-top: 1rem;
+  width: 7.7rem;
+  height: 2.3rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  transition: 0.4s;
+}
+.inputContainer button:hover {
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  border: 0px;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.iconsEdit a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+.searchDiv {
+  text-align: center;
+  margin-top: 2rem;
+}
+.searchDiv h1 {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 2.2rem;
+}
+.searchDiv input {
+  width: 14rem;
+  height: 2rem;
+  border-radius: 0.6rem;
+  border: 1.5px solid grey;
+  font-size: medium;
+  color: black;
+}
+@media (max-width: 800px) {
+  .ContentPageContainer {
+    width: 100%;
+  }
+  header {
+    width: 100%;
+  }
+}
+@media (max-width: 550px) {
+  .contentBody {
+    margin: 0px;
+    padding: 0px;
+    margin-top: 5rem;
+    padding-bottom: 2rem;
+  }
+
+  .inputContainer {
+    border: 0px;
+    padding-top: 0rem;
+  }
+}
