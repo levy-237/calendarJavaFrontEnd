@@ -63,10 +63,9 @@ export default function Content() {
                   </b>
                 </section>
                 <br />
-                <section className="contentURL">
+                <section className="contentUrl">
                   {content ? (
                     <>
-                      <span className="contentURLlink">Link to Content:</span>
                       <a target="_blank" href={content.url}>
                         {content.url}
                       </a>
