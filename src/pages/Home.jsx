@@ -19,8 +19,8 @@ export default function Home() {
   return (
     <div className="contentContainer">
       {data.map((x, i) => (
-        <Link key={i} to={`/${x.id}`}>
-          <div className="contentBody">
+        <div className="contentBody" key={i}>
+          <Link to={`/${x.id}`}>
             <h4>{x.title}</h4>
             <p>{x.desc.slice(0, 350)}...</p>
             <br />
@@ -33,8 +33,8 @@ export default function Home() {
                 <span> {x.contentType}</span>
               </span>
             </div>
-          </div>
-        </Link>
+          </Link>
+        </div>
       ))}
     </div>
   );
